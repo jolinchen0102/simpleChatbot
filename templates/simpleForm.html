@@ -1,8 +1,8 @@
-<p>Ask me any questions</p>
+<h1>Ask me any questions</h1>
 
 <form action="" method="post" novalidate>
 	{% csrf_token %}
 	{{ form.as_p }}
 	<input type="submit" value="Submit">
-	<form action="" method="post" novalidate>
+	<form action="http://127.0.0.1:8000/chatbotFAQ/question" method="post" novalidate>
 </form>
