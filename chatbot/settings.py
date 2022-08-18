@@ -26,11 +26,12 @@ SECRET_KEY = "django-insecure-vm-7cj+a^z!=gw(dnz^d(&0eb=&y_w&xojkv39j!97qm=8r289
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['simple-faq-collector.herokuapp.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
 INSTALLED_APPS = [
+    'multiselectfield',
     'rest_framework',
     "chatbotFAQ.apps.ChatbotfaqConfig",
     "django.contrib.admin",
